@@ -3,10 +3,11 @@
     npm install j4m355/update-youtrack -g
 
 Place credential settings in ``./app/config/settings.json`` 
+If forking ``touch`` a ``_settings.json`` file instead of placing credentials in ``settings.json`` to avoid am accidental commit of credentials.
 
 ####Usage
 
-Touch a ``post-commit`` file inside your projects ``.git/hooks/`` folder and insert the following:
+``touch`` a ``post-commit`` file inside your projects ``.git/hooks/`` folder and insert the following:
 
     #!/bin/sh
     #
