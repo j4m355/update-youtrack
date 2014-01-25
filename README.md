@@ -13,7 +13,6 @@ Touch a ``post-commit`` file inside your projects ``.git/hooks/`` folder and ins
     # An example hook script that is called after a successful
     # commit is made.
     #
-    # To enable this hook, rename this file to "post-commit".
 
     update-youtrack
 
