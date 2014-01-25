@@ -16,3 +16,8 @@ Touch a ``post-commit`` file inside your projects ``.git/hooks/`` folder and ins
     # To enable this hook, rename this file to "post-commit".
 
     update-youtrack
+
+
+####To update an issue status:
+   
+    git commit -am "#issue-id status"
