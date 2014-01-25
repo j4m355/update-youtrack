@@ -1,0 +1,1 @@
+    npm install j4m355/update-youtrack -g
