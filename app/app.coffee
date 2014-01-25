@@ -25,18 +25,20 @@ exec('git log -1 HEAD --format=format:%s%n%b', (err, commit, stderr)->
 		.post(youtrackUrl + apiBase + '/user/login')
 		.send({login : youtrackUser})
 		.send({password : youtrackPassword})
-		.set("Accept" : accept)
-		.set("Content-type" : contentType)
+		.set("Accept", accept)
+		.set("Content-type", contentType)
 		.end((res)->
 			console.log "Login status: " + res.status
 			cookie = res.header['set-cookie']
 			request
-				.post(settings.get('youtrack-url') + apiBase + "/issue/" + issue + "/execute" )
+				.post(youtrackUrl + apiBase + "/issue/" + issue + "/execute" )
 				.send({command : commandString})
 				.set('Cookie', cookie)
-				.set("Accept" : contentType)
-				.set("Content-type" : contentType)
+				.set("Accept", contentType)
+				.set("Content-type", contentType)
 				.end((res)->
+					debugger
+					console.log res.text
 					console.log "bug update status: " + res.status
 					)
 			)
