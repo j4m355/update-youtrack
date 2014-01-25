@@ -25,4 +25,3 @@ If forking ``touch`` a ``_settings.json`` file instead of placing credentials in
 ####To update an issue status:
    
     git commit -am "#issue-id status"
-
