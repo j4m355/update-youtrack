@@ -20,3 +20,6 @@ Touch a ``post-commit`` file inside your projects ``.git/hooks/`` folder and ins
 ####To update an issue status:
    
     git commit -am "#issue-id status"
+
+
+
