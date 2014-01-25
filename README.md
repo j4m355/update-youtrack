@@ -21,4 +21,3 @@ Touch a ``post-commit`` file inside your projects ``.git/hooks/`` folder and ins
    
     git commit -am "#issue-id status"
 
-
