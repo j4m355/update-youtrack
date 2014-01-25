@@ -34,11 +34,10 @@ exec('git log -1 HEAD --format=format:%s%n%b', (err, commit, stderr)->
 				.post(youtrackUrl + apiBase + "/issue/" + issue + "/execute" )
 				.send({command : commandString})
 				.set('Cookie', cookie)
-				.set("Accept", contentType)
+				.set("Accept", accept)
 				.set("Content-type", contentType)
 				.end((res)->
 					debugger
-					console.log res.text
 					console.log "bug update status: " + res.status
 					)
 			)
