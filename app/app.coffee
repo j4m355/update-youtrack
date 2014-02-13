@@ -18,7 +18,7 @@ try
 			youtrackUser = settings.get("userSettings:user")
 			console.log "youtrackuser: " + youtrackUser
 			youtrackPassword = settings.get("userSettings:pass")
-			console.log "youtrackpassword: " youtrackPassword
+			console.log "youtrackpassword: " +  youtrackPassword
 			apiBase = '/rest'
 			contentType = "application/x-www-form-urlencoded"
 			accept = "application/json"
