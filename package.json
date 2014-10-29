@@ -14,7 +14,7 @@
     "coffee-script": "~1.4.0",
     "nconf": "~0.6.7",
     "underscore" : "*",
-    "superagent" : "*"
+    "superagent" : "0.16.0"
   },
   "bin": {
     "update-youtrack": "./bin/update-youtrack"
