@@ -1,6 +1,6 @@
 {
   "name": "update-youtrack",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "update issues",
   "main": "index.js",
   "scripts": {
